@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "remix-app-template",
+  "description": "",
+  "license": "",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production remix build",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run sass\" \"remix dev\"",
+    "start": "cross-env NODE_ENV=production remix-serve build",
+    "sass": "sass --load-path=node_modules --watch app/:app/"
+  },
+  "dependencies": {
+    "@carbon/react": "^1.6.0",
+    "@remix-run/node": "^1.5.1",
+    "@remix-run/react": "^1.5.1",
+    "@remix-run/serve": "^1.5.1",
+    "concurrently": "^7.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.53.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.5.1",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false
+}
